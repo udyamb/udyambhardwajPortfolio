@@ -49,8 +49,8 @@ export async function getStaticProps()
 {
   return({
     props:{
-      jsonFileData:require('../../src/pages/JsonFiles/projectsInfo.json'),
-    corpJsonFile:require('../../src/pages/JsonFiles/corpProjectsInfo.json')
+      jsonFileData:require('../../src/pages/JsonFiles/projectsInfo.json')||[],
+    corpJsonFile:require('../../src/pages/JsonFiles/corpProjectsInfo.json')||[]
     }
   })
 }
