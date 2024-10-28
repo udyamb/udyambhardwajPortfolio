@@ -12,8 +12,8 @@ import { myTheme } from '@/Providers/ThemeContext';
 
 export default function Projects() {
     const { theme } = useContext(myTheme)
-    const jsonArray = useContext(jsonData)
-    const CompanyArray = useContext(corpJson)
+    const jsonArray = useContext(jsonData)||[]
+    const CompanyArray = useContext(corpJson)||[]
 
     const projectClassName = theme === 'light'
         ? 'light-theme'
