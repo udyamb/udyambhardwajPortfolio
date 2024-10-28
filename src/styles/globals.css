@@ -57,6 +57,9 @@ body {
   margin-bottom: 1em;
 }
 .light-theme #cardId{
+  background: whitesmoke;
+  color: rgb(45, 34, 13);
+  margin: 1em;
   border: 2px solid rgb(15, 5, 79);
   border-radius: 10px;
 }
@@ -91,6 +94,9 @@ body {
   margin-bottom: 1em;
 }
 .dark-theme #cardId{
+  background: #07090c;
+  color: #9bea5b;
+  margin: 1em;
   border: 2px solid rgb(149, 0, 0);
   border-radius: 10px;
 }
@@ -101,6 +107,9 @@ body {
   margin: 1em;
 }
 .funky-theme #cardId{
+  background: linear-gradient(65deg,rgb(144, 49, 33),rgb(36, 69, 17));
+  color: #d9c7e4;
+  margin: 1em;
   border: 2px solid white;
   border-radius: 10px;
 }
