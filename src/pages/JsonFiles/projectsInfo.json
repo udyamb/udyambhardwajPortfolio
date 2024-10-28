@@ -1,0 +1,19 @@
+[
+    {"id":1,"title":"Url Shortner","description":"Created a URL shortening service that allows users to convert long URLs into shortened versions, similar to services like Bitly or TinyURL.","detailed_description":"The project aimed to learn URL encoding/decoding techniques, work with databases for mapping original and shortened URLs, and implement redirection mechanisms.","usage":"Users can submit a long URL, and the service generates a unique shortened link that redirects to the original URL when accessed.",
+    "link":"https://url-shortener-microservice.freecodecamp.rocks/",
+    "git_code":"https://github.com/udyamb/urlshort"
+},
+    {"id":2,"title":"Header Parser","description":"Developed a microservice that parses HTTP headers from incoming requests, providing detailed information about the client's IP address, language, and software.","detailed_description":"The primary goal was to gain hands-on experience with request manipulation and API development, while building a practical tool for understanding request metadata.","usage":"The parser follows this process: it extracts the headers, formats them, and returns a JSON response with relevant data about the request source.",
+    "link":"https://request-header-parser-microservice.freecodecamp.rocks/",
+    "git_code":"https://github.com/udyamb/header-parser-fcc"
+},
+    {"id":3,"title":"Time Stamp Microservice","description":"Built a microservice that converts natural language date inputs into Unix timestamps and formatted date strings.","detailed_description":"This project was an exercise in working with date formats, parsing user input, and generating responses that are universally understandable across different systems.","usage":"he microservice processes requests by detecting the date format, converting it into a standard format, and returning the unique timestamp and UTC string.",
+    "link":"https://timestamp-microservice.freecodecamp.rocks/",
+    "git_code":"https://github.com/udyamb/timestamp_fcc"
+},
+    {"id":4,"title":"MIT Scratch Clone","description":"Developed a simplified version of MIT's Scratch programming platform.","detailed_description":"sers can move around the svg image and rotate it and then continue to move it around, providing an engaging way to learn basic coding concepts visually.","usage":"The task was challenging as the code execution is a step by step procedure but got a good hands on learning on How to work on svg images.",
+    "link":"https://juspayassignment.netlify.app/",
+    "git_code":"https://github.com/udyamb/react_master_juspay"
+}
+
+]
