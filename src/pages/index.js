@@ -22,6 +22,9 @@ export default function Home({jsonFileData,corpJsonFile}) {
   const projectedTheme=theme==='light'?'light-theme':theme==='dark'?'dark-theme':'funky-theme'
   return (
     <>
+    <Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
     <Box className={projectedTheme} sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid size={{ xs: 6, md: 4 }}>
