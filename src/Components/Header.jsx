@@ -29,7 +29,7 @@ export default function Header() {
         >
           <MenuItem value={'light'}>Light</MenuItem>
           <MenuItem value={'dark'}>Dark</MenuItem>
-          <MenuItem value={'funcky'}>Funky</MenuItem>
+          <MenuItem value={'funcky'}>Funcky</MenuItem>
         </Select>
       </FormControl>
     </Box>

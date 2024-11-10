@@ -4,6 +4,7 @@ import { ThemeProvider } from "@emotion/react";
 import { createTheme, CssBaseline } from "@mui/material";
 import Header from "@/Components/Header";
 import ThemeContext from "@/Providers/ThemeContext";
+import HeaderPortfolio from "@/Components/HeaderPortfolio";
 
 const theme = createTheme({
   palette: {
@@ -18,10 +19,12 @@ const theme = createTheme({
 });
 
 export default function App({ Component, pageProps }) {
-  return(
+  return(<>
+  <HeaderPortfolio/>
     <ThemeContext>
-      <Header/>
+      <Header />
      <Component {...pageProps} />
     </ThemeContext>
+  </>
     );
 }

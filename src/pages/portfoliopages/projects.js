@@ -9,11 +9,13 @@ import { corpJson } from '..';
 import { useContext } from 'react';
 import Divider from "@mui/material/Divider";
 import { myTheme } from '@/Providers/ThemeContext';
+import SkillSet from '@/Components/SkillSet';
+import Languages from '@/Components/Languages';
 
 export default function Projects() {
     const { theme } = useContext(myTheme)
-    const jsonArray = useContext(jsonData)||[]
-    const CompanyArray = useContext(corpJson)||[]
+    const jsonArray = useContext(jsonData) || []
+    const CompanyArray = useContext(corpJson) || []
 
     const projectClassName = theme === 'light'
         ? 'light-theme'
@@ -21,25 +23,25 @@ export default function Projects() {
             ? 'dark-theme'
             : 'funky-theme';
     return (
-        <div className={`${projectClassName}`}>
+        <div className={projectClassName}>
             <Box >
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 6, md: 4 }}>
                         <h2>Personal Projects</h2>
-                        <Card id="cardId" className={`${projectClassName}`} sx={{ minWidth: 275 }}>
+                        <Card id="cardId" className={projectClassName} sx={{ minWidth: 275 }}>
                             <CardContent>
-                                <div className={`${projectClassName}`}>
+                                <div >
                                     {jsonArray.map((items) => (
                                         <div key={items.id}>
                                             <h3>{items.title}</h3>
                                             <div>
                                                 <ul>
 
-                                                <li>{items.description}</li>
-                                                <li>{items.detailed_description}</li>
-                                                <li>{items.usage}</li>
-                                                <li><a href={items.link} target='_blank'>Try the {items.title} by Udyam</a></li>
-                                                <li>Code link: <a href={items.git_code} target="_blank">View on GitHub</a></li>
+                                                    <li>{items.description}</li>
+                                                    <li>{items.detailed_description}</li>
+                                                    <li>{items.usage}</li>
+                                                    <li><a href={items.link} target='_blank'>Try the {items.title} by Udyam</a></li>
+                                                    <li>Code link: <a href={items.git_code} target="_blank">View on GitHub</a></li>
                                                 </ul>
                                             </div>
                                             <Divider sx={{ borderBottomWidth: 10 }} />
@@ -51,10 +53,10 @@ export default function Projects() {
                     </Grid>
                     <Grid size={{ xs: 6, md: 8 }}>
                         <h2>Company Projects</h2>
-                        <Card id="cardId" className={`${projectClassName}`} sx={{ minWidth: 275 }}>
+                        <Card id="cardId" className={projectClassName} sx={{ minWidth: 275 }}>
                             <CardContent>
                                 {CompanyArray.map((items) => (
-                                    <div className={`${projectClassName}`} key={items.id}>
+                                    <div key={items.id}>
                                         <h3>{items.title}</h3>
                                         <div>
                                             <ul>
@@ -74,7 +76,14 @@ export default function Projects() {
                                 ))}
                             </CardContent>
                         </Card>
-
+                        <Card id="cardId"  className={projectClassName} sx={{ minWidth: 275 }}>
+                            <CardContent>
+                                <h3>SkillSet</h3>
+                                <SkillSet />
+                                <h3>Languages Spoken</h3>
+                                <Languages />
+                            </CardContent>
+                        </Card>
                     </Grid>
                 </Grid>
             </Box>

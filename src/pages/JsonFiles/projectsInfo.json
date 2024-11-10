@@ -7,7 +7,7 @@
     "link":"https://request-header-parser-microservice.freecodecamp.rocks/",
     "git_code":"https://github.com/udyamb/header-parser-fcc"
 },
-    {"id":3,"title":"Time Stamp Microservice","description":"Built a microservice that converts natural language date inputs into Unix timestamps and formatted date strings.","detailed_description":"This project was an exercise in working with date formats, parsing user input, and generating responses that are universally understandable across different systems.","usage":"he microservice processes requests by detecting the date format, converting it into a standard format, and returning the unique timestamp and UTC string.",
+    {"id":3,"title":"Time Stamp Microservice","description":"Built a microservice that converts natural language date inputs into Unix timestamps and formatted date strings.","detailed_description":"This project was an exercise in working with date formats, parsing user input, and generating responses that are universally understandable across different systems.","usage":"The microservice processes requests by detecting the date format, converting it into a standard format, and returning the unique timestamp and UTC string.",
     "link":"https://timestamp-microservice.freecodecamp.rocks/",
     "git_code":"https://github.com/udyamb/timestamp_fcc"
 },

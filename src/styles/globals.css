@@ -20,6 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 * {
@@ -27,25 +28,49 @@ body {
   padding: 0;
   margin: 0;
 }
+.headerArea{
+  margin-bottom: 4%;
+text-align: center;
+margin-top: 8px;
+text-shadow: #3e0505;
+position: relative;
+}
+  .headerArea h3{
+/* position: absolute; */
+  }
 
 /* Light Theme */
 .light-theme {
   background: whitesmoke;
   color: rgb(45, 34, 13);
   margin: 1em;
+  padding: 0.5rem;
 }
 
-.light-theme a {
-  color: rgb(112, 255, 46); /* Default link color */
+
+.light-theme #additionalSkills
+{
+display: inline-flex;
+background: whitesmoke;
+color: rgb(45, 34, 13);
+margin: 1em;
+border: 2px solid rgb(15, 5, 79);
+border-radius: 10px;
+}
+
+.light-theme  a {
+  color: rgb(10, 60, 71);
+  border-bottom:5px solid #ffc336;
+  /* Default link color */
 }
 
 .light-theme a:hover {
   color: rgb(200, 0, 0);
 }
 
-.light-theme a:visited {
+/* .light-theme a:visited {
   color: rgb(120, 34, 34);
-}
+} */
 
 .light-theme p, .light-theme li {
   word-spacing: 0.25cm;
@@ -68,20 +93,17 @@ body {
   background: #07090c;
   color: #9bea5b;
   margin: 1em;
+  padding: 0.5rem;
 }
 
 .dark-theme a {
-  color: #3e0505;
-  background: #07090c;
-  margin: 1em; /* Default link color */
+  color: #ff00ae;
+  /* background: #9bea5b; */
+  border-bottom: 5px solid rgb(97, 0, 182);/* Default link color */
 }
 
 .dark-theme a:hover {
-  color: #7dff91;
-}
-
-.dark-theme a:visited {
-  color: #64b367;
+  color: #ff6ed8;
 }
 
 .dark-theme p, .dark-theme li {
@@ -102,28 +124,28 @@ body {
 }
 /* Funky Theme */
 .funky-theme {
-  background: linear-gradient(65deg,rgb(144, 49, 33),rgb(36, 69, 17));
-  color: #d9c7e4;
+  background: linear-gradient(65deg,#845BB3,#d0bdf4);
+  color: #770909;
   margin: 1em;
+  padding: 0.5rem;
 }
 .funky-theme #cardId{
-  background: linear-gradient(65deg,rgb(144, 49, 33),rgb(36, 69, 17));
-  color: #d9c7e4;
+  background: #9effca;
+  color: #604d03;
   margin: 1em;
   border: 2px solid white;
   border-radius: 10px;
 }
 .funky-theme a {
-  color: #d9c7e4; /* Default link color */
+  color: #251b3a;
+  border-bottom: 5px solid rgb(5, 87, 39); /* Default link color */
 }
 
 .funky-theme a:hover {
-  color: #ff85f6;
+  color: #636300;
+  
 }
 
-.funky-theme a:visited {
-  color: #b078c1;
-}
 
 .funky-theme p, .funky-theme li {
   word-spacing: 0.25cm;
